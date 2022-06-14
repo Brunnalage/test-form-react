@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-
+import {Home} from './pages/Home'
+import {GlobalStyle} from './pages/Home'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode>    
+    <GlobalStyle /> 
+       <Home />
   </React.StrictMode>
 )
