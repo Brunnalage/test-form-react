@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import arrow from "../img/expand_more_black_24dp.svg"
 
 const Label = styled.label`        
     font-size: 0.875em; 
@@ -28,7 +29,11 @@ const FormInfo = styled.div`
     &:first-child {
     grid-column: 1/3;
     grid-row: 1/1;
-    }   
+    } 
+    &:last-child {
+     input[type="date"]::-webkit-calendar-picker-indicator {          
+    background: url(${arrow}) no-repeat; }    
+     }  
 `
 
 const InputField = ({ value, label, placeholder, type, onChange }) => {

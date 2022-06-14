@@ -39,10 +39,11 @@ export function Home() {
     <Box>
     <Header />   
      <Form>     
-        <InputField value="Name" label="Full Name*"/>
-        <InputField value="Email" label="Email*"/>
-        <InputField value="Phone" label="Phone"/>
-        <InputField value="Password" label="Password*"/>        
+        <InputField value="Name" label="Full Name*" type="text"/>
+        <InputField value="Email" label="Email*" type="email"/>
+        <InputField value="Phone" label="Phone" type="tel"/>
+        <InputField value="Password" label="Password*" type="password"/>
+        <InputField value="Birthdate" label="Birthdate*" type="date"/>
      </Form>
     </Box>    
   )
