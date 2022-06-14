@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React, { Component } from 'react';
 import { createGlobalStyle } from 'styled-components'
 import { Header } from '../components/header/header'; 
-
+import InputField from '../components/InputField';
 
 export const GlobalStyle = createGlobalStyle`
    html, body{ box-sizing: border-box;
@@ -19,20 +19,32 @@ const Box = styled.div`
     height: 47.5em;
     margin: 1.5% auto;
     border-radius: 1.5em;
-    padding: 4%; 
-    
+    padding: 4%;     
+`
+
+const Form = styled.form`
+    grid-area: main;    
+    height: calc(760px - 30%);    
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: calc(70% - 1em) 30%;    
+    grid-template-rows: 20% 20% 20% 40%;
+    justify-content: space-between;
+    flex-wrap: wrap;   
 `
 
 export function Home() { 
 
-  return (    
-    <>   
-    
+  return (           
     <Box>
-    <Header />
-    </Box>      
-    
-    </>
+    <Header />   
+     <Form>     
+        <InputField value="Name" label="Full Name*"/>
+        <InputField value="Email" label="Email*"/>
+        <InputField value="Phone" label="Phone"/>
+        <InputField value="Password" label="Password*"/>        
+     </Form>
+    </Box>    
   )
 }
 
