@@ -21,7 +21,7 @@ const Input = styled.input`
     color:#767676;
 `
 
-const FormInfo = styled.div`
+export const FormInfo = styled.div`
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 20% 50% 30%;
@@ -30,7 +30,7 @@ const FormInfo = styled.div`
     grid-column: 1/3;
     grid-row: 1/1;
     } 
-    &:last-child {
+    &:nth-child(5) {
      input[type="date"]::-webkit-calendar-picker-indicator {          
     background: url(${arrow}) no-repeat; }    
      }  
