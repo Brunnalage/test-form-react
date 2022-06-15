@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { createGlobalStyle } from 'styled-components'
 import { Header } from '../components/header/header'; 
 import InputField from '../components/InputField';
+import Checkbox from '../components/checkbox';
 
 export const GlobalStyle = createGlobalStyle`
    html, body{ box-sizing: border-box;
@@ -44,6 +45,7 @@ export function Home() {
         <InputField value="Phone" label="Phone" type="tel"/>
         <InputField value="Password" label="Password*" type="password"/>
         <InputField value="Birthdate" label="Birthdate*" type="date"/>
+        <Checkbox />
      </Form>
     </Box>    
   )
