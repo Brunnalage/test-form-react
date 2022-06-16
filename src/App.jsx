@@ -1,6 +1,7 @@
 import React from 'react';
 import {Home} from './pages/Home'
 import { createGlobalStyle } from 'styled-components'
+import { Success} from './pages/Success';
 
 export const GlobalStyle = createGlobalStyle`
    html, body{ box-sizing: border-box;
@@ -17,6 +18,7 @@ export function App (){
         <>
         <GlobalStyle />
         <Home />
+        <Success />
         </>
     )
 }
