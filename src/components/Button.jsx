@@ -18,7 +18,7 @@ const FormButton = styled.button`
  const Button = ({title}) => {
    
     return(
-        <FormButton type="button">{title}</FormButton>
+        <FormButton type="submit">{title}</FormButton>
     )
  }
 
