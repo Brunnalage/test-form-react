@@ -1,10 +1,21 @@
 import styled from 'styled-components';
-import React, { Component } from 'react';
+import React from 'react';
 import { Header } from '../components/header/header'; 
 import InputField from '../components/InputField';
 import Checkbox from '../components/checkbox';
 import Button from '../components/Button';
 import Box from '../components/Box';
+
+export const HeaderHome =  styled.div`
+    grid-area: header;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;  
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+`
 
 const Form = styled.form`
     grid-area: main;    
@@ -20,7 +31,9 @@ export function Home() {
 
   return (               
     <Box>
-    <Header />   
+    <HeaderHome> 
+    <Header title="Sign in Up" />  
+    </HeaderHome> 
      <Form>     
         <InputField value="Name" label="Full Name*" type="text"/>
         <InputField value="Email" label="Email*" type="email"/>
