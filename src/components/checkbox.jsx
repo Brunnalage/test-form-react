@@ -61,8 +61,6 @@ const Checkbox = () => {
 
 export default Checkbox;
 
-/* <input type="checkbox" value="terms" checked={terms} onChange={({ target }) => setTerms(target.checked)} /> */
-
 
 
 

@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components'
 import { Header } from '../components/header/header'; 
 import InputField from '../components/InputField';
 import Checkbox from '../components/checkbox';
+import Button from '../components/button';
 
 export const GlobalStyle = createGlobalStyle`
    html, body{ box-sizing: border-box;
@@ -46,6 +47,7 @@ export function Home() {
         <InputField value="Password" label="Password*" type="password"/>
         <InputField value="Birthdate" label="Birthdate*" type="date"/>
         <Checkbox />
+        <Button title="Register"/>
      </Form>
     </Box>    
   )
