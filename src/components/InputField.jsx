@@ -39,13 +39,13 @@ export const FormInfo = styled.div`
 const InputField = ({ value, label, placeholder, type, onChange }) => {
     const handleChange = (e) => {
       const { value } = e.target;
-      onChange(value);
+      onChange={value};     
     }
   
     return (
       <FormInfo>
         <Label htmlFor="input-field">{label}</Label>
-        <Input type={type} value={value} placeholder={placeholder} onChange={handleChange}
+        <Input value={value} label={label} placeholder={placeholder} type={type} onChange={handleChange}
         />
       </FormInfo>
     )
