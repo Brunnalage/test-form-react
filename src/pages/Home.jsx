@@ -29,6 +29,11 @@ const Form = styled.form`
     `;
 
 export function Home() { 
+
+  const handleChange = (e) => {
+    const { value } = e.target;
+    onChange={value};     
+  }
   
   function handleSubmit(event){
     event.preventDefault();  
@@ -41,11 +46,11 @@ export function Home() {
     <Header title="Sign in Up" />  
     </HeaderHome> 
      <Form onSubmit = {handleSubmit}>     
-        <InputField id="name" name="" placeholder="Name" label="Full Name*" type="text"/>
-        <InputField placeholder="Email" label="Email*" type="email"/>
-        <InputField placeholder="Phone" label="Phone" type="tel"/>
-        <InputField placeholder="Password" label="Password*" type="password"/>
-        <InputField placeholder="Birthdate" label="Birthdate*" type="date"/>
+        <InputField id="name" name="" placeholder="Name" label="Full Name*" type="text" onChange={handleChange}/>
+        <InputField placeholder="Email" label="Email*" type="email" onChange={handleChange}/>
+        <InputField placeholder="Phone" label="Phone" type="tel" onChange={handleChange}/>
+        <InputField placeholder="Password" label="Password*" type="password" onChange={handleChange}/>
+        <InputField placeholder="Birthdate" label="Birthdate*" type="date" onChange={handleChange}/>
         <Checkbox />
         <Button title="Register"/>
      </Form>
