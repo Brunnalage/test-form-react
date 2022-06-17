@@ -42,12 +42,12 @@ export const Error = styled.span`
     align-items: top; 
 `;
 
-const InputField = ({ value, label, placeholder, type, onChange, onBlur, errorMessage }) => { 
+const InputField = ({ value, label, placeholder, type, onChange, onBlur, error }) => { 
     return (
       <FormInfo>
         <Label htmlFor="input-field">{label}</Label>
         <Input value={value} placeholder={placeholder} type={type} onChange={onChange} onBlur={onBlur}/>
-        <Error>{errorMessage}</Error>
+        {error && <Error>{error}</Error>}
       </FormInfo>
     )
   };
