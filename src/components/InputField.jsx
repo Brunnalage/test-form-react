@@ -24,8 +24,8 @@ const Input = styled.input`
 export const FormInfo = styled.div`
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 20% 50% 30%;
-    align-items: top;
+    grid-template-rows: 20% 50% 20%;
+    align-items: center;
     &:first-child {
     grid-column: 1/3;
     grid-row: 1/1;
@@ -36,12 +36,18 @@ export const FormInfo = styled.div`
      }  
 `
 
-const InputField = ({ value, label, placeholder, type, onChange }) => { 
+export const Error = styled.span`
+    color: #ff8e8e;
+    font-size: 0.825em;   
+    align-items: top; 
+`;
+
+const InputField = ({ value, label, placeholder, type, onChange, onBlur, errorMessage }) => { 
     return (
       <FormInfo>
         <Label htmlFor="input-field">{label}</Label>
-        <Input value={value} label={label} placeholder={placeholder} type={type} onChange={onChange}
-        />
+        <Input value={value} placeholder={placeholder} type={type} onChange={onChange} onBlur={onBlur}/>
+        <Error>{errorMessage}</Error>
       </FormInfo>
     )
   };
