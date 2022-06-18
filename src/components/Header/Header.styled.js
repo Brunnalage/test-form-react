@@ -13,10 +13,20 @@ export const HeaderWrappper = styled.div`
     justify-content: center;
     }
     &.success{
+    grid-area: header;
+    display: grid;
     grid-gap: 3em;
     height: 50%;       
-    align-content: center; 
+    align-content: center;
+    @media (max-width: 768px) {
+    grid-area: header;
+        display: grid;        
+        height: auto;       
+        align-content: center; 
+        margin-bottom: 2em; 
+        grid-gap: 1.5em; 
     }
+}
 `
 
 export const HeaderImage = styled.img`
