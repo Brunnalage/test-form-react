@@ -1,13 +1,12 @@
-import React, { useState } from "react";
 import styled from "styled-components";
-import arrow from "../img/expand_more_black_24dp.svg"
+import arrow from "../../img/expand_more_black_24dp.svg"
 
-const Label = styled.label`        
+export const LabelWrapper = styled.label`        
     font-size: 0.875em; 
     display:block;
     color:#767676; 
 `
-const Input = styled.input`
+export const InputWrapper = styled.input`
   box-sizing: border-box;
     font-size: 1em;    
     padding: 0.5em;
@@ -41,27 +40,3 @@ export const Error = styled.span`
     font-size: 0.825em;   
     align-items: top; 
 `;
-
-const InputField = ({ value, label, placeholder, type, onChange, onBlur, error }) => { 
-    return (
-      <FormInfo>
-        <Label htmlFor="input-field">{label}</Label>
-        <Input value={value} placeholder={placeholder} type={type} onChange={onChange} onBlur={onBlur}/>
-        {error && <Error>{error}</Error>}
-      </FormInfo>
-    )
-  };
-  
-
-
-/*const InputField = () => {
-    const [name, setName] = React.useState('');
-
-    return (
-        <div>
-            <label htmlFor=""></label>
-            <input type="text" value={name} onChange={(event) => setName(event.target.value)} />
-        </div>
-    )
-    }/*/
-export default InputField;

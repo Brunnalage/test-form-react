@@ -1,24 +1,12 @@
-import styled from 'styled-components';
-import headerImage from "./pictureData.png"
+import headerImage from "../../img/pictureData.png";
+import { HeaderImage } from './Header.styled';
+import { Title } from './Header.styled';
 
-export const HeaderImage = styled.img`
- margin: 0 auto;
-   display: block;
-`
-
-export const Title = styled.h1`
- font-family: 'Inter', sans-serif;
- font-size: 2.25em;
- text-align: center;
- color:#111111;
- margin-bottom: 0.5em;
-`
-
-export function Header({title}) {
+export function Header({ title }) {
     return (
         <>
-         <HeaderImage src={headerImage} alt=" connected clouds"></HeaderImage>
-         <Title>{title}</Title>
+            <HeaderImage src={headerImage} alt=" connected clouds"></HeaderImage>
+            <Title>{title}</Title>
         </>
     )
-}
+};

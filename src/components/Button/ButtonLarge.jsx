@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 
 const LargeButtonStyle = styled.button`
-width: 272px;
+    width: 272px;
     height: 176px;
     border-radius: 8px;
     background: #0DBDBD;
@@ -12,8 +12,8 @@ width: 272px;
     cursor: pointer;   
 `;
 
-export const ButtonLarge = ({title}) => {
- return(
-    <LargeButtonStyle type="button">{title}</LargeButtonStyle>
- )
+export const ButtonLarge = ({ title }) => {
+    return (
+        <LargeButtonStyle type="button">{title}</LargeButtonStyle>
+    )
 }

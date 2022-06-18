@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import React from 'react';
-import { Header } from '../components/header/header';
-import { Form } from '../components/Form';
-import Box from '../components/Box';
+import { Header } from '../components/Header/Header';
+import { Form } from '../components/Form/Form';
+import Box from '../components/Box/Box';
 
 export const HeaderHome = styled.div`
     grid-area: header;

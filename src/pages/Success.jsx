@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import React from 'react';
-import Box from '../components/Box';
-import { Header } from '../components/header/header'; 
-import { ButtonLarge } from '../components/ButtonLarge';
+import Box from '../components/Box/Box';
+import { Header } from '../components/Header/Header'; 
+import { ButtonLarge } from '../components/Button/ButtonLarge';
 
 const HeaderSuccess = styled.div`
  grid-area: header;
