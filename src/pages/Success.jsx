@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 import Box from '../components/Box/Box';
 import { Header } from '../components/Header/Header'; 
-import { ButtonLarge } from '../components/Button/ButtonLarge';
+import  Button  from '../components/Button/Button';
 
 const HeaderSuccess = styled.div`
  grid-area: header;
@@ -27,7 +27,7 @@ return(
       <Header title="Success!"/>
       </HeaderSuccess>
       <MainSuccess>
-      <ButtonLarge title="Go Back!"/>
+      <Button type="button" title="Go Back!"/>
       </MainSuccess>
     </Box>
 )

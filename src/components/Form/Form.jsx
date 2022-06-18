@@ -29,7 +29,7 @@ export const Form = () => {
             <InputField placeholder="Password" label="Password*" type="password" {...password} />
             <InputField placeholder="Birthdate" label="Birthdate*" type="date" {...birthDate} />
             <Checkbox />
-            <Button title="Register" />
+            <Button type="submit" title="Register" />
         </FormRegister>
     )
 };
