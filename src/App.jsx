@@ -1,24 +1,15 @@
 import React from 'react';
-import {Home} from './pages/Home'
-import { createGlobalStyle } from 'styled-components'
-import { Success} from './pages/Success';
-
-export const GlobalStyle = createGlobalStyle`
-   html, body{ box-sizing: border-box;
-    margin: 0;
-    padding: 0;background: #E5E5E5;
-    font-family: 'Nunito', sans-serif;
-    height: 100vh;
-  }
-   `
+import { GlobalStyle } from './App.styled';
+import { Home } from './pages/Home'
+import { Success } from './pages/Success';
 
 
-export function App (){
-    return(
+export function App() {
+    return (
         <>
-        <GlobalStyle />
-        <Home />
-        <Success />
+            <GlobalStyle />
+            <Home />
+            <Success />
         </>
     )
 }

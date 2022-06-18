@@ -7,6 +7,7 @@ import { HiddenCheckbox } from "./Checkbox.styled";
 import { Check } from "./Checkbox.styled";
 import { Text } from "./Checkbox.styled";
 import { Error } from "./Checkbox.styled";
+import { FormInfo } from "../Inputs/Inputs.styled";
 
 const Checkbox = ({ type, error }) => {
     const [checked, setChecked] = React.useState(false);
@@ -15,6 +16,7 @@ const Checkbox = ({ type, error }) => {
         setChecked(!checked);
     }
     return (
+        <FormInfo>
         <CheckboxContainer checked={checked} onClick={handleCheckboxChange}>
             <Checkboxlabel>
                 <StyledCheckbox checked={checked}><Check alt="tick icon" src={CheckIcon} />
@@ -24,6 +26,7 @@ const Checkbox = ({ type, error }) => {
             </Checkboxlabel>
             {error && <Error>{error}</Error>}
         </CheckboxContainer>
+        </FormInfo>
     )
 };
 

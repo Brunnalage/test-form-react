@@ -12,4 +12,8 @@ export const FormButton = styled.button`
     margin-left: auto;     
     align-self: center;
     cursor: pointer;
+    @media (max-width: 768px) {
+    width: calc(100% - 1em);
+    margin: 0;
+    }
 `;

@@ -19,7 +19,6 @@ export const Form = () => {
             console.log('enviou')
         } else {
             console.log('naoenviar')
-            console.log(birthDate.value)
         }
     }
     return (
