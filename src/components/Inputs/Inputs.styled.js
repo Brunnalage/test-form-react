@@ -7,7 +7,7 @@ export const LabelWrapper = styled.label`
     color:#767676; 
 
     @media (max-width: 768px) {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 `;
 
@@ -82,4 +82,7 @@ export const Error = styled.span`
     color: #ff8e8e;
     font-size: 0.825em;   
     align-items: top; 
+    @media (max-width: 768px) {
+    margin-top: 1em;
+    }
 `;

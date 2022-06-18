@@ -2,8 +2,9 @@ import React from "react";
 import { FormInfo } from "./Inputs.styled";
 import { LabelWrapper } from "./Inputs.styled";
 import { InputWrapper } from "./Inputs.styled";
+import { Error } from "./Inputs.styled";
 
-const InputField = ({ value, label, placeholder, type, onChange, onBlur, error }) => {
+export const InputField = ({ value, label, placeholder, type, onChange, onBlur, error }) => {
   return (
     <FormInfo>
       <LabelWrapper htmlFor="input-field">{label}</LabelWrapper>
@@ -13,4 +14,3 @@ const InputField = ({ value, label, placeholder, type, onChange, onBlur, error }
   )
 };
 
-export default InputField;
