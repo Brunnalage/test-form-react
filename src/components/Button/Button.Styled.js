@@ -25,5 +25,10 @@ export const FormButton = styled.button`
     width: 272px;
     height: 176px;
     font-size: 2.25em;
+
+    @media (max-width: 768px) {
+    width: 327px;
+    height: 75px; 
+    }   
     }
 `;
