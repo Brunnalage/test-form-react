@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormRegister } from './Form.styled';
-import InputField from '../Inputs/Inputs';
+import { InputField } from '../Inputs/Inputs';
 import Checkbox from '../Checkbox/checkbox';
 import Button from '../Button/Button';
 import useForm from '../../utils/Hooks/useForm';
