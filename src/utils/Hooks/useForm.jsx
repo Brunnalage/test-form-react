@@ -20,6 +20,9 @@ const validator = {
     birthDate: {
         regex:/^((?:19|20)\d{2})\s*\-(1[012]|0?[1-9])\-\s*(3[01]|[12][0-9]|0?[1-9])/,
         message: 'Birthdate invalid'
+    },
+    checkbox: {        
+        message: 'You must accept the terms'
     }
 }
 
@@ -36,7 +39,8 @@ const useForm = (type) => {
             setError(null);
             return true;
         }
-    }
+    } 
+   
 
     function onChange({ target }) {
         if (error) validate(target.value);
@@ -46,9 +50,9 @@ const useForm = (type) => {
         value,
         setValue,
         error,
-        onChange,
+        onChange,       
         onBlur: () => validate(value),
-        validate: () => validate(value),
+        validate: () => validate(value),       
 
     };
 };

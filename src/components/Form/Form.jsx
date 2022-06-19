@@ -5,6 +5,7 @@ import Checkbox from '../Checkbox/checkbox';
 import Button from '../Button/Button';
 import useForm from '../../utils/Hooks/useForm';
 import { useNavigate } from 'react-router-dom';
+import useCheckbox from '../../utils/Hooks/useCheckbox';
 
 export const Form = () => {
     const name = useForm('fullName');
@@ -12,11 +13,13 @@ export const Form = () => {
     const phone = useForm('phone');
     const password = useForm('password');
     const birthDate = useForm('birthDate');
+    const checkbox = useCheckbox('checkbox');
     const navigateTo = useNavigate()
+ 
 
     function handleSubmit(event) {
         event.preventDefault();              
-        if (name.validate() && (email.validate()) && (phone.validate()) && (password.validate()) && (birthDate.validate())) {
+        if (name.validate() && (email.validate()) && (phone.validate()) && (password.validate()) && (birthDate.validate()) && (checkbox.validate())) {
           navigateTo('/Success');
         }
    
@@ -28,7 +31,7 @@ export const Form = () => {
             <InputField placeholder="Phone" label="Phone*" type="tel" {...phone} />
             <InputField placeholder="Password" label="Password*" type="password" {...password} />
             <InputField placeholder="Birthdate" label="Birthdate*" type="date" {...birthDate} />
-            <Checkbox />
+            <Checkbox type="checkbox" {...checkbox} />
            <Button type="submit" title="Register" onClick={handleSubmit}/>
         </FormRegister>
     )

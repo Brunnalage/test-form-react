@@ -9,28 +9,23 @@ import { Text } from "./Checkbox.styled";
 import { Error } from "./Checkbox.styled";
 import { FormInfo } from "../Inputs/Inputs.styled";
 
-const Checkbox = ({ type, error }) => {
-    const [checked, setChecked] = React.useState(false);
 
-    function handleCheckboxChange() {
-        setChecked(!checked);
-    }
+const Checkbox = ({ type, onChange, checked, error, onBlur }) => {
+
     return (
         <FormInfo>
-        <CheckboxContainer checked={checked} onClick={handleCheckboxChange}>
-            <Checkboxlabel>
-                <StyledCheckbox checked={checked}><Check alt="tick icon" src={CheckIcon} />
-                </StyledCheckbox>
-                <HiddenCheckbox type={type} onChange={handleCheckboxChange} checked={checked} />
-                <Text>I accept the terms and privacy</Text>
-            </Checkboxlabel>
+            <CheckboxContainer>
+                 <input type={type} onChange={onChange} checked={checked} onBlur={onBlur}/>I accept the terms and privacy                 
+            </CheckboxContainer>            
             {error && <Error>{error}</Error>}
-        </CheckboxContainer>
         </FormInfo>
     )
 };
 
 export default Checkbox;
+
+
+
 
 
 
