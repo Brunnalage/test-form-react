@@ -15,4 +15,4 @@ export const FormRegister = styled.form`
     grid-template-columns: 50% 50%;    
     grid-template-rows: 12.5% 12.5% 12.5% 12.5% 10% 10% 25%;
     } 
-    `;
+`;
