@@ -8,7 +8,7 @@ export const FormButton = styled.button`
     color:white;    
     font-family: 'Nunito', sans-serif;      
     cursor: pointer;   
-
+   
     &.submit {
     width: 81px;
     height: 40px;
