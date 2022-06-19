@@ -15,15 +15,14 @@ export const Form = () => {
     const birthDate = useForm('birthDate');
     const checkbox = useCheckbox('checkbox');
     const navigateTo = useNavigate()
- 
 
     function handleSubmit(event) {
-        event.preventDefault();              
+        event.preventDefault();
         if (name.validate() && (email.validate()) && (phone.validate()) && (password.validate()) && (birthDate.validate()) && (checkbox.validate())) {
-          navigateTo('/Success');
+            navigateTo('/Success');
         }
-   
     }
+
     return (
         <FormRegister onSubmit={handleSubmit}>
             <InputField placeholder="Name" label="Full Name*" type="text" {...name} />
@@ -32,7 +31,7 @@ export const Form = () => {
             <InputField placeholder="Password" label="Password*" type="password" {...password} />
             <InputField placeholder="Birthdate" label="Birthdate*" type="date" {...birthDate} />
             <Checkbox type="checkbox" {...checkbox} />
-           <Button type="submit" title="Register" onClick={handleSubmit}/>
+            <Button type="submit" title="Register" onClick={handleSubmit} />
         </FormRegister>
     )
 };

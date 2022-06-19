@@ -8,9 +8,9 @@ const Checkbox = ({ type, onChange, checked, error, onBlur }) => {
 
     return (
         <FormInfo>
-            <CheckboxContainer>      
-            <Checkmark type={type} onChange={onChange} checked={checked} onBlur={onBlur}/>I accept the terms and privacy         
-            </CheckboxContainer>            
+            <CheckboxContainer>
+                <Checkmark type={type} onChange={onChange} checked={checked} onBlur={onBlur} />I accept the terms and privacy
+            </CheckboxContainer>
             {error && <Error>{error}</Error>}
         </FormInfo>
     )

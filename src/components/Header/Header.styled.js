@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const HeaderWrappper = styled.div`
     grid-area: header;
     display: grid;
-
     &.home{
     grid-gap: 0.5em;
     grid-template-columns: auto;
@@ -20,14 +19,14 @@ export const HeaderWrappper = styled.div`
     align-content: center;
     @media (max-width: 768px) {
     grid-area: header;
-        display: grid;        
-        height: auto;       
-        align-content: center; 
-        margin-bottom: 2em; 
-        grid-gap: 1.5em; 
+    display: grid;        
+    height: auto;       
+    align-content: center; 
+    margin-bottom: 2em; 
+    grid-gap: 1.5em; 
     }
-}
-`
+    }
+`;
 
 export const HeaderImage = styled.img`
     margin: 0 auto;

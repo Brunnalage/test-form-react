@@ -5,7 +5,7 @@ import { HeaderWrappper } from "./Header.styled";
 
 export function Header({ title, type }) {
     return (
-        <HeaderWrappper className={`${type}`}type={(type)}>
+        <HeaderWrappper className={`${type}`} type={(type)}>
             <HeaderImage src={headerImage} alt=" connected clouds"></HeaderImage>
             <Title>{title}</Title>
         </HeaderWrappper>

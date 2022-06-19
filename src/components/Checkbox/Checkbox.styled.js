@@ -10,12 +10,12 @@ export const CheckboxContainer = styled.div`
 `;
 
 export const Checkmark = styled.input`
-width: 20px;
-height: 20px;
-border-radius:2px;  
-accent-color: rgb(0, 164, 180);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-`
+  width: 20px;
+  height: 20px;
+  border-radius:2px;  
+  accent-color: rgb(0, 164, 180);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+`;
 export const Error = styled.p`
   display: block;
   color: #ff8e8e;

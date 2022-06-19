@@ -5,10 +5,9 @@ export const LabelWrapper = styled.label`
     font-size: 0.875em; 
     display:block;
     color:#767676; 
-
     @media (max-width: 768px) {
     margin-bottom: 1em;
-}
+    }
 `;
 
 export const InputWrapper = styled.input`
@@ -23,8 +22,7 @@ export const InputWrapper = styled.input`
     height: 2.5em;    
     font-family: 'Nunito', sans-serif;
     color:#767676;
-
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
     width: calc(100% - 1em);
     padding: 0.5em;
     margin: 0 0;
@@ -43,9 +41,8 @@ export const FormInfo = styled.div`
     &:nth-child(5) {
      input[type="date"]::-webkit-calendar-picker-indicator {          
     background: url(${arrow}) no-repeat; }              
-}  
-
-@media (max-width: 768px) {
+    }  
+    @media (max-width: 768px) {
     &:nth-child(1){
         order: 1;
     }
@@ -75,7 +72,7 @@ export const FormInfo = styled.div`
         grid-row: 6/7;
         align-self: center;
     }
-}
+    }
 `;
 
 export const Error = styled.span`
