@@ -84,5 +84,6 @@ export const Error = styled.span`
     align-items: top; 
     @media (max-width: 768px) {
     margin-top: 1em;
+    font-weight: bold;
     }
 `;

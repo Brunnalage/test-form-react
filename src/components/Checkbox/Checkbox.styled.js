@@ -52,4 +52,5 @@ export const Error = styled.p`
   color: #ff8e8e;
   font-size: 0.825em;   
   align-self: start; 
+  font-weight: bold;
  `;
