@@ -1,5 +1,6 @@
 
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 
 export const Login = styled.div`
 height: 100%;
@@ -18,3 +19,6 @@ grid-area: main;
 
 `;
 
+export const StyledLink = styled(Link)`
+text-decoration: none;
+`;
