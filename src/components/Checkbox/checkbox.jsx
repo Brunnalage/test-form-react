@@ -4,7 +4,6 @@ import { Error } from "./Checkbox.styled";
 import { FormInfo } from "../Inputs/Inputs.styled";
 import { Checkmark } from "./Checkbox.styled";
 
-
 const Checkbox = ({ type, onChange, checked, error, onBlur }) => {
 
     return (
