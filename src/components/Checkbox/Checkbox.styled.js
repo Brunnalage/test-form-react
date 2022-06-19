@@ -51,5 +51,5 @@ export const Error = styled.p`
   display: block;
   color: #ff8e8e;
   font-size: 0.825em;   
-  align-items: top; 
+  align-self: start; 
  `;
