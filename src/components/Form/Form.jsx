@@ -4,6 +4,7 @@ import { InputField } from '../Inputs/Inputs';
 import Checkbox from '../Checkbox/checkbox';
 import Button from '../Button/Button';
 import useForm from '../../utils/Hooks/useForm';
+import { useNavigate } from 'react-router-dom';
 
 export const Form = () => {
     const name = useForm('fullName');
@@ -11,15 +12,14 @@ export const Form = () => {
     const phone = useForm('phone');
     const password = useForm('password');
     const birthDate = useForm('birthDate');
-
+    const navigateTo = useNavigate()
 
     function handleSubmit(event) {
-        event.preventDefault();
+        event.preventDefault();              
         if (name.validate() && (email.validate()) && (phone.validate()) && (password.validate()) && (birthDate.validate())) {
-            console.log('enviou')
-        } else {
-            console.log('naoenviar')
+          navigateTo('/Success');
         }
+   
     }
     return (
         <FormRegister onSubmit={handleSubmit}>
@@ -29,7 +29,7 @@ export const Form = () => {
             <InputField placeholder="Password" label="Password*" type="password" {...password} />
             <InputField placeholder="Birthdate" label="Birthdate*" type="date" {...birthDate} />
             <Checkbox />
-            <Button type="submit" title="Register" />
+           <Button type="submit" title="Register" onClick={handleSubmit}/>
         </FormRegister>
     )
 };
