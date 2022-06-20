@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '../components/Header/Header';
+import { Header } from '../components/Header/HeaderPrincipal';
 import Button from '../components/Button/Button';
 import { MainSuccess } from './Success.styled';
 import { Login } from './Success.styled';
